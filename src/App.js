@@ -1,7 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-
+import key from './apikey.js'
 function App() {
+
+  const apikey = process.env.REACT_APP_s_key;
   return (
     <div className="App">
       <header className="App-header">
@@ -15,7 +17,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Trying website
+          Trying website= {key}.
         </a>
       </header>
     </div>
